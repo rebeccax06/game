@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3mbbu2dh4ia3"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_hc2yn"]
+[ext_resource type="Texture2D" uid="uid://rrto0vjy2lay" path="res://ferb.webp" id="1_lbn2g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1f1cn"]
+size = Vector2(4, 24)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_hc2yn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_1f1cn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Ferb" type="Sprite2D" parent="."]
+position = Vector2(0, -4)
+scale = Vector2(0.02, 0.02)
+texture = ExtResource("1_lbn2g")
