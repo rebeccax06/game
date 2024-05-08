@@ -7,6 +7,7 @@ func _ready():
 	polygon_2d.polygon = collision_polygon_2d.polygon
 
 #called every frame. 'delta' is the elapsed time since the previous frame
+@warning_ignore("unused_parameter")
 func _process(delta):
 	pass
 	#hello
