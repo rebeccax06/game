@@ -39,3 +39,4 @@ func handle_jump():
 		if (Input.is_action_just_released("ui_accept") or Input.is_action_just_released("ui_up")) and velocity.y<JUMP_VELOCITY/2:
 			velocity.y = JUMP_VELOCITY/2
 			#nvm
+			#hello
